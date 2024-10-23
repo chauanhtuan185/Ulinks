@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import TopLoader from "@/components/layouts/toploader";
 import { Providers } from "@/components/wagmi-providers";
+import { useEffect } from 'react';
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,6 +26,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  useEffect(() => {
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+      iframe.setAttribute('sandbox', 'allow-forms allow-scripts allow-same-origin');
+    });
+  }, []);
   return (
     <html lang="en">
       <head>
