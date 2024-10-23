@@ -32,7 +32,7 @@ export default function RootLayout({
       <head>
         <meta name="twitter:card" content="player" />
         <meta name="twitter:site" content="@kayx86" />
-        <meta name="twitter:title" content="Demo Sblinks" />
+        <meta name="twitter:title" content="Demo Mulinks" />
         <meta
           name="twitter:description"
           content="Brief description of your app"
