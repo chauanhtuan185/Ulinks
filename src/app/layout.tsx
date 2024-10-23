@@ -45,7 +45,7 @@ export default function RootLayout({
         <meta name="twitter:player:height" content="560" />
         <meta
           name="twitter:image"
-          content="https://app.ekubo.org/pwa-512x512.png"
+          content="https://cdn.coin68.com/images/20231216051438-935aa38b-540f-4f6b-9e60-64394a5c8642-194.jpg"
         />
         <meta
           property="og:url"
@@ -55,7 +55,7 @@ export default function RootLayout({
         <meta property="og:description" content="test" />
         <meta
           property="og:image"
-          content="https://app.ekubo.org/pwa-512x512.png"
+          content="https://cdn.coin68.com/images/20231216051438-935aa38b-540f-4f6b-9e60-64394a5c8642-194.jpg"
         />
         <Script id="sandbox-fixer" strategy="afterInteractive">
           {`
