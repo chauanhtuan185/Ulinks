@@ -39,7 +39,7 @@ export default function RootLayout({
         />
         <meta
           name="twitter:player"
-          content="https://vite-react-chauanhtuan185s-projects.vercel.app/swap"
+          content="https://ulinks-dun.vercel.app/assetlinks/api-action=sasas"
         />
         <meta name="twitter:player:width" content="360" />
         <meta name="twitter:player:height" content="560" />
@@ -49,7 +49,7 @@ export default function RootLayout({
         />
         <meta
           property="og:url"
-          content="https://vite-react-chauanhtuan185s-projects.vercel.app/swap"
+          content="https://ulinks-dun.vercel.app/assetlinks/api-action=sasas"
         />
         <meta property="og:title" content="test" />
         <meta property="og:description" content="test" />
