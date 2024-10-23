@@ -138,10 +138,11 @@ const ActionContainer = () => {
           "https://subtly-native-skylark.ngrok-free.app/api/actions/mint-nft/mint",
           {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "ngrok-skip-browser-warning": "69420",
-            },
+             headers: new Headers({
+                "Content-Type": "application/json",
+                "ngrok-skip-browser-warning": "69420",
+              }),
+            });
             body: JSON.stringify(body),
             credentials: "include",
           }
