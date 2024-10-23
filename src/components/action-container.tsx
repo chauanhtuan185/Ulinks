@@ -255,7 +255,12 @@ const ActionContainer = () => {
   useEffect(() => {
     const fetchApiData = async () => {
       try {
-        const response = await fetch(apiAction);
+        const response = await fetch(apiAction, {
+        method: "GET",
+        headers: new Headers({
+            "ngrok-skip-browser-warning": "69420",
+          }),
+        });
         const data = await response.json();
         const baseUrl = new URL(apiAction).origin;
         const mappedProps = mapApiResponseToLayoutProps(data, baseUrl);
