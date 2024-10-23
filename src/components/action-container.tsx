@@ -135,11 +135,12 @@ const ActionContainer = () => {
         };
 
         const response = await fetch(
-          "http://localhost:80/api/actions/mint-nft/mint",
+          "https://subtly-native-skylark.ngrok-free.app/api/actions/mint-nft/mint",
           {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
+              "ngrok-skip-browser-warning": "69420",
             },
             body: JSON.stringify(body),
             credentials: "include",
