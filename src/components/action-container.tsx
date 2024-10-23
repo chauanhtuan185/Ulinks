@@ -135,7 +135,7 @@ const ActionContainer = () => {
         };
 
         const response = await fetch(
-          "https://9de0-115-79-235-27.ngrok-free.app/api/actions/mint-nft/mint",
+          "http://localhost:80/api/actions/mint-nft/mint",
           {
             method: "POST",
             headers: {
@@ -248,7 +248,7 @@ const ActionContainer = () => {
     if (parts.length > 1) {
       const decodedPath = decodeURIComponent(parts[1]);
 
-      setApiAction("https://9de0-115-79-235-27.ngrok-free.app/api/actions/mint-nft");
+      setApiAction("http://localhost/api/actions/mint-nft");
     }
   }, [pathname]);
 
