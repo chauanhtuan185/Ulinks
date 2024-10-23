@@ -135,14 +135,12 @@ const ActionContainer = () => {
         };
 
         const response = await fetch(
-          "https://subtly-native-skylark.ngrok-free.app/api/actions/mint-nft/mint",
+          "http://localhost:80/api/actions/mint-nft/mint",
           {
             method: "POST",
-             headers: new Headers({
-                "Content-Type": "application/json",
-                "ngrok-skip-browser-warning": "69420",
-              }),
-            });
+            headers: {
+              "Content-Type": "application/json",
+            },
             body: JSON.stringify(body),
             credentials: "include",
           }
@@ -250,19 +248,14 @@ const ActionContainer = () => {
     if (parts.length > 1) {
       const decodedPath = decodeURIComponent(parts[1]);
 
-      setApiAction("https://subtly-native-skylark.ngrok-free.app/api/actions/mint-nft");
+      setApiAction("http://localhost/api/actions/mint-nft");
     }
   }, [pathname]);
 
   useEffect(() => {
     const fetchApiData = async () => {
       try {
-        const response = await fetch(apiAction, {
-        method: "GET",
-        headers: new Headers({
-            "ngrok-skip-browser-warning": "69420",
-          }),
-        });
+        const response = await fetch(apiAction);
         const data = await response.json();
         const baseUrl = new URL(apiAction).origin;
         const mappedProps = mapApiResponseToLayoutProps(data, baseUrl);
