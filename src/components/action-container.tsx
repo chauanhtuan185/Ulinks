@@ -248,7 +248,7 @@ const ActionContainer = () => {
     if (parts.length > 1) {
       const decodedPath = decodeURIComponent(parts[1]);
 
-      setApiAction("https://9de0-115-79-235-27.ngrok-free.app/api/actions/mint-nft/mint");
+      setApiAction("https://9de0-115-79-235-27.ngrok-free.app/api/actions/mint-nft");
     }
   }, [pathname]);
 
